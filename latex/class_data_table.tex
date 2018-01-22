@@ -1,0 +1,188 @@
+\hypertarget{class_data_table}{}\section{Класс Data\+Table}
+\label{class_data_table}\index{Data\+Table@{Data\+Table}}
+
+
+Класс \mbox{\hyperlink{class_data_table}{Data\+Table}}. Основной класс в этом проекте.  
+
+
+
+
+{\ttfamily \#include $<$datatable.\+h$>$}
+
+Граф наследования\+:Data\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_table}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_table_a639ccb380db236e70c17de76c05c67f2}{Data\+Table}} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Основной конструктор. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_table_a91add7552f26453ea7d378a1ec24cd2a}{Data\+Table}} (Q\+List$<$ Q\+String $>$ Col\+Name, Q\+List$<$ Q\+String $>$ Data\+Type, Q\+List$<$ Q\+List$<$ Q\+String $>$$>$ Data)
+\begin{DoxyCompactList}\small\item\em Конструктор с параметрами. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_table_a6f97f5c8d7fe892732d34945514c6c5d}\label{class_data_table_a6f97f5c8d7fe892732d34945514c6c5d}} 
+void \mbox{\hyperlink{class_data_table_a6f97f5c8d7fe892732d34945514c6c5d}{Type\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Функция определения типа данных \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_table_af46ecb3f9f33e2a34ec9866991cd12ff}{Load\+Csv}} (Q\+String filename)
+\begin{DoxyCompactList}\small\item\em Чтение файла .csv. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_table_afb7a2b7446f518aa5fe208dc6df1f686}{Save\+Csv}} (Q\+String filename)
+\begin{DoxyCompactList}\small\item\em Запись в файл .csv. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_table_ab9cbaf9a296c84eb4c969870d83a6555}{Load\+Sql}} (Q\+String filename, Q\+String tablename)
+\begin{DoxyCompactList}\small\item\em Чтение файла .db. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_table_a73852c3ab4dfd0fdc6ce5e99c860824f}{Save\+Sql}} (Q\+String filename, Q\+String tablename)
+\begin{DoxyCompactList}\small\item\em Запись в файл .db. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_table_a4e6651b3d147f8aa796195db5cb5b4db}\label{class_data_table_a4e6651b3d147f8aa796195db5cb5b4db}} 
+virtual int {\bfseries row\+Count} (const Q\+Model\+Index \&parent) const override
+\item 
+\mbox{\Hypertarget{class_data_table_af9507f1dc84206a4961eee8580bbdb49}\label{class_data_table_af9507f1dc84206a4961eee8580bbdb49}} 
+virtual int {\bfseries column\+Count} (const Q\+Model\+Index \&parent) const override
+\item 
+\mbox{\Hypertarget{class_data_table_a095037439684a30c1eb8d34d0c8a118e}\label{class_data_table_a095037439684a30c1eb8d34d0c8a118e}} 
+virtual Q\+Variant {\bfseries data} (const Q\+Model\+Index \&index, int role) const override
+\item 
+\mbox{\Hypertarget{class_data_table_a3a99f20f29c49bde6cf4c43e60422692}\label{class_data_table_a3a99f20f29c49bde6cf4c43e60422692}} 
+virtual Q\+Variant {\bfseries header\+Data} (int section, Qt\+::\+Orientation orientation, int role) const override
+\end{DoxyCompactItemize}
+\subsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_data_table_a448d6b5189991394bc06db5950f2c8dc}{operator==}} (const \mbox{\hyperlink{class_data_table}{Data\+Table}} \&L, const \mbox{\hyperlink{class_data_table}{Data\+Table}} \&R)
+\begin{DoxyCompactList}\small\item\em Сравнение двух переменных класса \mbox{\hyperlink{class_data_table}{Data\+Table}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс \mbox{\hyperlink{class_data_table}{Data\+Table}}. Основной класс в этом проекте. 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_data_table_a639ccb380db236e70c17de76c05c67f2}\label{class_data_table_a639ccb380db236e70c17de76c05c67f2}} 
+\index{Data\+Table@{Data\+Table}!Data\+Table@{Data\+Table}}
+\index{Data\+Table@{Data\+Table}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Data\+Table()}{DataTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Data\+Table\+::\+Data\+Table (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Основной конструктор. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_table_a91add7552f26453ea7d378a1ec24cd2a}\label{class_data_table_a91add7552f26453ea7d378a1ec24cd2a}} 
+\index{Data\+Table@{Data\+Table}!Data\+Table@{Data\+Table}}
+\index{Data\+Table@{Data\+Table}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Data\+Table()}{DataTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Data\+Table\+::\+Data\+Table (\begin{DoxyParamCaption}\item[{Q\+List$<$ Q\+String $>$}]{Col\+Name,  }\item[{Q\+List$<$ Q\+String $>$}]{Data\+Type,  }\item[{Q\+List$<$ Q\+List$<$ Q\+String $>$$>$}]{Data }\end{DoxyParamCaption})}
+
+
+
+Конструктор с параметрами. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Col\+Name} & Имена столбцов \\
+\hline
+{\em Data\+Type} & Типы данных \\
+\hline
+{\em Data} & Основные данные таблицы \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{class_data_table_af46ecb3f9f33e2a34ec9866991cd12ff}\label{class_data_table_af46ecb3f9f33e2a34ec9866991cd12ff}} 
+\index{Data\+Table@{Data\+Table}!Load\+Csv@{Load\+Csv}}
+\index{Load\+Csv@{Load\+Csv}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Load\+Csv()}{LoadCsv()}}
+{\footnotesize\ttfamily void Data\+Table\+::\+Load\+Csv (\begin{DoxyParamCaption}\item[{Q\+String}]{filename }\end{DoxyParamCaption})}
+
+
+
+Чтение файла .csv. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_table_ab9cbaf9a296c84eb4c969870d83a6555}\label{class_data_table_ab9cbaf9a296c84eb4c969870d83a6555}} 
+\index{Data\+Table@{Data\+Table}!Load\+Sql@{Load\+Sql}}
+\index{Load\+Sql@{Load\+Sql}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Load\+Sql()}{LoadSql()}}
+{\footnotesize\ttfamily void Data\+Table\+::\+Load\+Sql (\begin{DoxyParamCaption}\item[{Q\+String}]{filename,  }\item[{Q\+String}]{tablename }\end{DoxyParamCaption})}
+
+
+
+Чтение файла .db. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла \\
+\hline
+{\em tablename} & Имя таблицы \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_table_afb7a2b7446f518aa5fe208dc6df1f686}\label{class_data_table_afb7a2b7446f518aa5fe208dc6df1f686}} 
+\index{Data\+Table@{Data\+Table}!Save\+Csv@{Save\+Csv}}
+\index{Save\+Csv@{Save\+Csv}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Save\+Csv()}{SaveCsv()}}
+{\footnotesize\ttfamily void Data\+Table\+::\+Save\+Csv (\begin{DoxyParamCaption}\item[{Q\+String}]{filename }\end{DoxyParamCaption})}
+
+
+
+Запись в файл .csv. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_table_a73852c3ab4dfd0fdc6ce5e99c860824f}\label{class_data_table_a73852c3ab4dfd0fdc6ce5e99c860824f}} 
+\index{Data\+Table@{Data\+Table}!Save\+Sql@{Save\+Sql}}
+\index{Save\+Sql@{Save\+Sql}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{Save\+Sql()}{SaveSql()}}
+{\footnotesize\ttfamily void Data\+Table\+::\+Save\+Sql (\begin{DoxyParamCaption}\item[{Q\+String}]{filename,  }\item[{Q\+String}]{tablename }\end{DoxyParamCaption})}
+
+
+
+Запись в файл .db. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filename} & Имя файла \\
+\hline
+{\em tablename} & Имя таблицы \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Документация по друзьям класса и функциям, относящимся к классу}
+\mbox{\Hypertarget{class_data_table_a448d6b5189991394bc06db5950f2c8dc}\label{class_data_table_a448d6b5189991394bc06db5950f2c8dc}} 
+\index{Data\+Table@{Data\+Table}!operator==@{operator==}}
+\index{operator==@{operator==}!Data\+Table@{Data\+Table}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_data_table}{Data\+Table}} \&}]{L,  }\item[{const \mbox{\hyperlink{class_data_table}{Data\+Table}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Сравнение двух переменных класса \mbox{\hyperlink{class_data_table}{Data\+Table}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em L} & Левая переменная \\
+\hline
+{\em R} & Права переменная \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{datatable_8h}{datatable.\+h}}\item 
+\mbox{\hyperlink{datatable_8cpp}{datatable.\+cpp}}\end{DoxyCompactItemize}
