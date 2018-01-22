@@ -12,6 +12,7 @@
 #include <QTextCodec>
 #include <QtSql>
 #include <QSqlRecord>
+#include <QTextCodec>
 
 DataTable::DataTable(QObject *parent): QAbstractTableModel(parent)
 {
@@ -73,6 +74,8 @@ void DataTable::LoadCsv(QString filename)
     int s;
     bool Q = false, QQ = false, N = true;
     if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextCodec *codec = QTextCodec::codecForName("UTF-8");
+        QTextCodec::setCodecForLocale(codec);
         QTextStream input(&file);
         while (!input.atEnd()) {
             S = input.readLine();
